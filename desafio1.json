@@ -1,8 +1,8 @@
 {
   "tabela_usuario": "user",
   "coluna_usuario": "id_user",
-  "tabela_plano": "financial",
-  "coluna_plano": "id_financial",
+  "tabela_plano": "plan",
+  "coluna_plano": "id_plan",
   "tabela_historico_de_reproducoes": "playback_history",
   "coluna_historico_de_reproducoes": "id_music",
   "tabela_seguindo_artistas": "following_artist",
