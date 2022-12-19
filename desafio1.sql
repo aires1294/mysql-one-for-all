@@ -21,7 +21,7 @@ DROP DATABASE IF EXISTS SpotifyClone;
   CREATE TABLE SpotifyClone.album(
     id_album INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
     album_name VARCHAR(250) NOT NULL,
-    launch_year DATE NOT NULL,
+    launch_year INTEGER NOT NULL,
     id_artist INT NOT NULL,
     FOREIGN KEY(id_artist) REFERENCES SpotifyClone.artist(id_artist)
   ) engine = InnoDB;
@@ -88,7 +88,7 @@ VALUES
 
 CREATE TABLE SpotifyClone.plan(
   id_plan PRIMARY KEY NOT NULL INT AUTO_INCREMENT,
-  monthly_fee DECIMAL NOT NULL, 
+  monthly_fee DECIMAL(4,2) NOT NULL, 
   plan VARCHAR(45) NOT NULL
 ) engine = InnoDB;
 
