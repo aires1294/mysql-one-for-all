@@ -28,14 +28,14 @@ DROP DATABASE IF EXISTS SpotifyClone;
 
   INSERT INTO SpotifyClone.album(album_name, launch_year, id_artist)
   VALUES
-  ('Renaissance', '2022', 1),
-  ('Jazz', '1978', 2),
-  ('Hot Space', '1982', 2),
-  ('Falso Brilhante', '1998', 3),
-  ('Vento de Maio', '2001', 3),
-  ('QVVJFA?', '2003', 4),
-  ('Somewhere Far Beyond', '2007', 5),
-  ('I Put A Spell On You', '2012', 6);
+  ('Renaissance', 2022, 1),
+  ('Jazz', 1978, 2),
+  ('Hot Space', 1982, 2),
+  ('Falso Brilhante', 1998, 3),
+  ('Vento de Maio', 2001, 3),
+  ('QVVJFA?', 2003, 4),
+  ('Somewhere Far Beyond', 2007, 5),
+  ('I Put A Spell On You', 2012, 6);
 
   CREATE TABLE SpotifyClone.music(
     id_music INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
