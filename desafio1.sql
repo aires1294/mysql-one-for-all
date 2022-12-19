@@ -56,7 +56,7 @@ DROP DATABASE IF EXISTS SpotifyClone;
   ('O Medo de Amar é o Medo de Ser Livre', 207, 5),
   ('Samba em Paris', 267, 6),
   ('The Bard’s Song	', 244, 7),
-  ('Feeling Good', 100, 8),
+  ('Feeling Good', 100, 8);
 
 CREATE TABLE SpotifyClone.history(
   id_playback_history INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
@@ -83,7 +83,7 @@ VALUES
 ('7', '4', '2011-12-15 22:30:49'),
 ('8', '4', '2012-03-17 14:56:41'),
 ('9', '9', '2022-02-24 21:14:22'),
-('10', '3', '2015-12-13 08:30:22'),
+('10', '3', '2015-12-13 08:30:22');
 
 CREATE TABLE SpotifyClone.plan(
   id_plan PRIMARY KEY NOT NULL INT AUTO_INCREMENT,
@@ -96,7 +96,7 @@ VALUES
 ('gratuito', 0.00 ),
 ('familiar', 7.99),
 ('universitário', 5.99),
-('pessoal', 6.99),
+('pessoal', 6.99);
 	
 
 CREATE TABLE SpotifyClone.following_artist(
@@ -122,7 +122,7 @@ VALUES
 (6,1),
 (7,6),
 (9,3),
-(10,2),
+(10,2);
 
 CREATE TABLE SpotifyClone.user(
   id_user PRIMARY KEY NOT NULL INT AUTO_INCREMENT,
@@ -144,7 +144,7 @@ VALUES
 ('Bell Hooks', 26, 3, '2018-01-05'),
 ('Christopher Alexander', 85, 4, '2019-06-05'),
 ('Judith Butler', 45, 4, '2020-05-13'),
-('Jorge Amado', 58, 4, '2017-02-17'),
+('Jorge Amado', 58, 4, '2017-02-17');
 
 
 
