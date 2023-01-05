@@ -73,7 +73,7 @@
     
 
   CREATE TABLE SpotifyClone.user(
-    id_user PRIMARY KEY NOT NULL INT AUTO_INCREMENT,
+    id_user INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
     user VARCHAR(100) NOT NULL,
     age INT NOT NULL,
     signature_date DATE NOT NULL,
@@ -119,7 +119,7 @@
   (9,3),
   (10,2);
 
-  CREATE TABLE SpotifyClone.history(
+  CREATE TABLE SpotifyClone.playback_history(
     reproduction_date DATETIME NOT NULL,
     id_music INT NOT NULL,
     id_user INT NOT NULL,
@@ -128,7 +128,7 @@
     FOREIGN KEY(id_user) REFERENCES SpotifyClone.user(id_user)
   ) engine = InnoDB;
 
-  INSERT INTO SpotifyClone.history(id_user, id_music, reproduction_date)
+  INSERT INTO SpotifyClone.playback_history(id_user, id_music, reproduction_date)
   VALUES
   (1, 8, '2022-02-28 10:45:55'),  
   (1, 2, '2020-05-02 05:30:35'),
