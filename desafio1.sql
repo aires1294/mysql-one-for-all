@@ -59,8 +59,8 @@
     ('Feeling Good', 100, 8);
 
     CREATE TABLE SpotifyClone.plan(
-    id_plan PRIMARY KEY NOT NULL INT AUTO_INCREMENT,
-    monthly_fee DECIMAL(4,2) NOT NULL, 
+    id_plan INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    monthly_fee DECIMAL(3,2) NOT NULL, 
     plan VARCHAR(45) NOT NULL
   ) engine = InnoDB;
 
