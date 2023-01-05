@@ -120,7 +120,7 @@
   (10,2);
 
   CREATE TABLE SpotifyClone.history(
-    reproduction_date DATETIME NOT NULL 
+    reproduction_date DATETIME NOT NULL,
     id_music INT NOT NULL,
     id_user INT NOT NULL,
     CONSTRAINT PRIMARY KEY (id_music, id_user),
