@@ -66,10 +66,10 @@
 
   INSERT INTO SpotifyClone.plan(plan, monthly_fee)
   VALUES
-  ('gratuito', 00.00 ),
-  ('familiar', 07.99),
-  ('universitário', 05.99),
-  ('pessoal', 06.99);
+  ('gratuito', 0.00 ),
+  ('familiar', 7.99),
+  ('universitário', 5.99),
+  ('pessoal', 6.99);
     
 
   CREATE TABLE SpotifyClone.user(
@@ -97,7 +97,7 @@
   CREATE TABLE SpotifyClone.following_artist(
     id_user INT NOT NULL,
     id_artist INT NOT NULL,
-    CONSTRAINT PRIMARY KEY(id_user, id_artist)
+    CONSTRAINT PRIMARY KEY(id_user, id_artist),
     FOREIGN KEY(id_user) REFERENCES SpotifyClone.user(id_user),
     FOREIGN KEY(id_artist) REFERENCES SpotifyClone.artist(id_artist)
   ) engine = InnoDB;
