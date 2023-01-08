@@ -12,7 +12,7 @@
     INSERT INTO SpotifyClone.artist (artist_name)
     VALUES
   ('Beyoncé'),
-  ('Queen '),
+  ('Queen'),
   ('Elis Regina'),
   ('Baco Exu do Blues'),
   ('Blind Guardian'),
